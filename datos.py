@@ -5,16 +5,16 @@
 # Menú del restaurante
 # Cada producto es un diccionario con: id, nombre, precio, categoría
 MENU = [
-    {"id": 1, "nombre": "Empanadas (x6)", "precio": 4500, "categoria": "Entradas"},
+    {"id": 1, "nombre": "Empanadas (x6)", "precio": 8500, "categoria": "Entradas"},
     {"id": 2, "nombre": "Papas fritas", "precio": 3500, "categoria": "Entradas"},
-    {"id": 3, "nombre": "Hamburguesa completa", "precio": 8500, "categoria": "Platos Principales"},
-    {"id": 4, "nombre": "Pizza muzzarella", "precio": 7500, "categoria": "Platos Principales"},
-    {"id": 5, "nombre": "Milanesa con puré", "precio": 9000, "categoria": "Platos Principales"},
-    {"id": 6, "nombre": "Gaseosa 500ml", "precio": 2000, "categoria": "Bebidas"},
-    {"id": 7, "nombre": "Agua mineral", "precio": 1500, "categoria": "Bebidas"},
+    {"id": 3, "nombre": "Hamburguesa completa", "precio": 12000, "categoria": "Platos Principales"},
+    {"id": 4, "nombre": "Pizza muzzarella", "precio": 10000, "categoria": "Platos Principales"},
+    {"id": 5, "nombre": "Milanesa con puré", "precio": 11000, "categoria": "Platos Principales"},
+    {"id": 6, "nombre": "Gaseosa 500ml", "precio": 3000, "categoria": "Bebidas"},
+    {"id": 7, "nombre": "Agua mineral", "precio": 2000, "categoria": "Bebidas"},
     {"id": 8, "nombre": "Cerveza artesanal", "precio": 3000, "categoria": "Bebidas"},
-    {"id": 9, "nombre": "Helado (2 bochas)", "precio": 4000, "categoria": "Postres"},
-    {"id": 10, "nombre": "Brownie con helado", "precio": 5000, "categoria": "Postres"},
+    {"id": 9, "nombre": "Helado (2 bochas)", "precio": 7000, "categoria": "Postres"},
+    {"id": 10, "nombre": "Brownie con helado", "precio": 8000, "categoria": "Postres"},
 ]
 
 # Promociones
