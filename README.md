@@ -2,12 +2,12 @@
 
 ## Integrantes del grupo
 - Bentolila, David Benjamín - Legajo: 30202
-- [Nombre Apellido] - Legajo: XXXXX  
+- Carballo, Santino - Legajo: XXXXX  
 - Escobar, Martín - Legajo: 30117
 - [Nombre Apellido] - Legajo: XXXXX
 
 ## Comisión
-ISI - Comisión X - 2026
+ISI - Comisión 1.2 - 2026
 
 ## Descripción del sistema
 Sistema de gestión de pedidos para un local gastronómico. Permite:
