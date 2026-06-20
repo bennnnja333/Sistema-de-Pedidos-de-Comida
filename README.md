@@ -1,9 +1,9 @@
 # 🍕 Sistema de Pedidos de Comida
 
 ## Integrantes del grupo
-- [Nombre Apellido] - Legajo: XXXXX
+- Bentolila, David Benjamín - Legajo: 30202
 - [Nombre Apellido] - Legajo: XXXXX  
-- [Nombre Apellido] - Legajo: XXXXX
+- Escobar, Martín - Legajo: 30117
 - [Nombre Apellido] - Legajo: XXXXX
 
 ## Comisión
