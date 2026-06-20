@@ -2,7 +2,7 @@
 
 ## Integrantes del grupo
 - Bentolila, David Benjamín - Legajo: 30202
-- Carballo, Santino - Legajo: XXXXX  
+- Carballo, Santino - Legajo: 28954  
 - Escobar, Martín - Legajo: 30117
 - [Nombre Apellido] - Legajo: XXXXX
 
