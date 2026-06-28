@@ -4,7 +4,7 @@
 - Bentolila, David Benjamín - Legajo: 30202
 - Carballo, Santino - Legajo: 28954  
 - Escobar, Martín - Legajo: 30117
-- [Nombre Apellido] - Legajo: XXXXX
+- Segura , Pedro Tomas A. - Legajo: 24350
 
 ## Comisión
 ISI - Comisión 1.2 - 2026
