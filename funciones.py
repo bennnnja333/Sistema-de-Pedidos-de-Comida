@@ -7,7 +7,7 @@ from datos import pedidos_realizados, total_ventas_dia, productos_vendidos
 from validaciones import *
 import os
 
-# FUNCIONES DE VISUALIZACIÓN
+# FUNCIONES DE VISUALIZACION
 
 def mostrar_menu_completo():
     """Muestra todo el menú con sus categorías"""
