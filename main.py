@@ -12,7 +12,7 @@ def main():
     """
     
     print("\n" + "="*50)
-    print("🍕 BIENVENIDO AL SISTEMA DE PEDIDOS")
+    print("---BIENVENIDO AL SISTEMA DE PEDIDOS---")
     print("="*50)
     print("Restaurante 'El Buen Sabor'")
     print("="*50)
@@ -51,8 +51,8 @@ def main():
                 
                 # Seleccionar medio de pago
                 medio_pago = seleccionar_medio_pago()
-                print(f"\n💵 Medio de pago seleccionado: {medio_pago}")
-                print(f"💰 Total a pagar: ${total_final:,.0f}")
+                print(f"\nMedio de pago seleccionado: {medio_pago}")
+                print(f"Total a pagar: ${total_final:,.0f}")
                 
                 # Confirmar pedido
                 confirmar = input("\n¿Confirmar pedido? (S/N): ")
@@ -66,8 +66,8 @@ def main():
                 if confirmar == "S":
                     # Actualizar estadísticas
                     actualizar_estadisticas(pedido, total_final)
-                    print("\n✅ ¡PEDIDO CONFIRMADO!")
-                    print(f"📝 Número de pedido: {pedidos_realizados}")
+                    print("\n¡PEDIDO CONFIRMADO!")
+                    print(f"Número de pedido: {pedidos_realizados}")
                     print("¡Gracias por su compra!")
                 else:
                     print("\n❌ Pedido cancelado")
@@ -98,7 +98,7 @@ def main():
             
         elif opcion == "7":
             print("\n" + "="*50)
-            print("👋 ¡Gracias por usar nuestro sistema!")
+            print("¡Gracias por usar nuestro sistema!")
             print("="*50)
             print(f"Resumen del día: {pedidos_realizados} pedidos")
             print(f"Total vendido: ${total_ventas_dia:,.0f}")
@@ -107,7 +107,7 @@ def main():
             sys.exit()
             
         else:
-            print("\n⚠️ Opción no válida. Intente nuevamente.")
+            print("\nOpción no válida. Intente nuevamente.")
             input("Presione Enter para continuar...")
 
 # Punto de entrada del programa
