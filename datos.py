@@ -2,8 +2,8 @@
 # datos.py - Datos del sistema
 # ============================================
 
-# Menú del restaurante
-# Cada producto es un diccionario con: id, nombre, precio, categoría
+# Menu del restaurante
+# Cada producto es un diccionario con: id, nombre, precio, categoria
 MENU = [
     {"id": 1, "nombre": "Empanadas (x6)", "precio": 8500, "categoria": "Entradas"},
     {"id": 2, "nombre": "Papas fritas", "precio": 3500, "categoria": "Entradas"},
@@ -26,7 +26,7 @@ PROMOCIONES = {
 # Medios de pago
 MEDIOS_PAGO = ["Efectivo", "Tarjeta de débito", "Tarjeta de crédito", "Transferencia"]
 
-# Variables globales para estadísticas (se inicializan en 0)
+# Variables globales para estadisticas (se inicializan en 0)
 pedidos_realizados = 0
 total_ventas_dia = 0
-productos_vendidos = {}  # Diccionario vacío
+productos_vendidos = {}  # Diccionario vacio
