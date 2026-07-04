@@ -4,6 +4,7 @@
 
 from datos import MENU, PROMOCIONES, MEDIOS_PAGO
 from datos import pedidos_realizados, total_ventas_dia, productos_vendidos
+import datos
 from validaciones import *
 import os
 
@@ -230,61 +231,54 @@ def actualizar_estadisticas(pedido, total_venta):
     """
     Actualiza las estadísticas globales del sistema
     """
-    # Usamos global para modificar variables globales
-    global pedidos_realizados
-    global total_ventas_dia
-    global productos_vendidos
-    
+
     # Incremento contadores
-    pedidos_realizados = pedidos_realizados + 1
-    total_ventas_dia = total_ventas_dia + total_venta
-    
+    datos.pedidos_realizados = datos.pedidos_realizados + 1
+    datos.total_ventas_dia = datos.total_ventas_dia + total_venta
+
     # Actualizo productos vendidos
     for item in pedido:
         nombre = item["producto"]["nombre"]
         cantidad = item["cantidad"]
-        
+
         # Si el producto ya esta en el diccionario, sumamos
-        if nombre in productos_vendidos:
-            productos_vendidos[nombre] = productos_vendidos[nombre] + cantidad
+        if nombre in datos.productos_vendidos:
+            datos.productos_vendidos[nombre] = datos.productos_vendidos[nombre] + cantidad
         else:
             # Si no esta, lo agregamos
-            productos_vendidos[nombre] = cantidad
+            datos.productos_vendidos[nombre] = cantidad
 
 def mostrar_estadisticas():
     """
     Muestra las estadísticas del día
     """
-    global pedidos_realizados
-    global total_ventas_dia
-    global productos_vendidos
-    
+
     print("\n" + "="*50)
     print("ESTADÍSTICAS DEL DÍA")
     print("="*50)
-    print(f"Pedidos realizados: {pedidos_realizados}")
-    print(f"Total vendido: ${total_ventas_dia:,.0f}")
-    
+    print(f"Pedidos realizados: {datos.pedidos_realizados}")
+    print(f"Total vendido: ${datos.total_ventas_dia:,.0f}")
+
     # Verifico si hay productos vendidos
-    if len(productos_vendidos) > 0:
+    if len(datos.productos_vendidos) > 0:
         # Encontrar el producto mas vendido
         producto_mas_vendido = ""
         cantidad_maxima = 0
-        
-        for producto, cantidad in productos_vendidos.items():
+
+        for producto, cantidad in datos.productos_vendidos.items():
             if cantidad > cantidad_maxima:
                 cantidad_maxima = cantidad
                 producto_mas_vendido = producto
-        
+
         print(f"\nProducto más vendido: {producto_mas_vendido}")
         print(f"   ({cantidad_maxima} unidades)")
-        
+
         print("\nDetalle de ventas:")
-        for producto, cantidad in productos_vendidos.items():
+        for producto, cantidad in datos.productos_vendidos.items():
             print(f"  • {producto}: {cantidad} unidades")
     else:
         print("\nNo se han vendido productos aún")
-    
+
     print("="*50)
 
 def limpiar_pantalla():
@@ -302,28 +296,24 @@ def guardar_estadisticas_en_archivo():
     """
     Guarda las estadísticas del día en un archivo .txt
     """
-    global pedidos_realizados
-    global total_ventas_dia
-    global productos_vendidos
-    
+
     try:
-        # Abro el archivo en modo escritura
         with open("estadisticas_dia.txt", "w") as archivo:
             archivo.write("="*50 + "\n")
             archivo.write("ESTADÍSTICAS DEL DÍA\n")
             archivo.write("="*50 + "\n")
-            archivo.write(f"Pedidos realizados: {pedidos_realizados}\n")
-            archivo.write(f"Total vendido: ${total_ventas_dia:,.0f}\n")
-            
-            if len(productos_vendidos) > 0:
+            archivo.write(f"Pedidos realizados: {datos.pedidos_realizados}\n")
+            archivo.write(f"Total vendido: ${datos.total_ventas_dia:,.0f}\n")
+
+            if len(datos.productos_vendidos) > 0:
                 archivo.write("\nDetalle de ventas:\n")
-                for producto, cantidad in productos_vendidos.items():
+                for producto, cantidad in datos.productos_vendidos.items():
                     archivo.write(f"  • {producto}: {cantidad} unidades\n")
             else:
                 archivo.write("\nNo se han vendido productos aún\n")
-            
+
             archivo.write("="*50 + "\n")
-        
+
         print("\nEstadísticas guardadas en 'estadisticas_dia.txt'")
     except:
         print("\nError al guardar el archivo")
