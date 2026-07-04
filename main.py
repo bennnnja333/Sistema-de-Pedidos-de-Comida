@@ -31,7 +31,7 @@ def main():
         
         opcion = input("\nSeleccione una opción (1-7): ")
         
-        # Estructura condicional múltiple
+        # Estructura condicional multiple
         if opcion == "1":
             limpiar_pantalla()
             mostrar_menu_completo()
@@ -41,30 +41,30 @@ def main():
             limpiar_pantalla()
             pedido, total = armar_pedido()
             
-            # Verificar que el pedido no esté vacío
+            # Verifico que el pedido no este vacío
             if pedido is not None:
-                # Aplicar promociones
+                # Aplico promociones
                 total_con_descuento, descuento_total, promociones_aplicadas = aplicar_promociones(pedido, total)
                 
-                # Mostrar resumen
+                # Muestro resumen
                 total_final = mostrar_resumen_pedido(pedido, total, total_con_descuento, descuento_total, promociones_aplicadas)
                 
-                # Seleccionar medio de pago
+                # Selecciona medio de pago
                 medio_pago = seleccionar_medio_pago()
                 print(f"\nMedio de pago seleccionado: {medio_pago}")
                 print(f"Total a pagar: ${total_final:,.0f}")
                 
-                # Confirmar pedido
+                # Confirmo pedido
                 confirmar = input("\n¿Confirmar pedido? (S/N): ")
                 confirmar = validar_si_no(confirmar)
                 
-                # Si la validación falla, preguntamos de nuevo
+                # Si la validacion falla, preguntamos de nuevo
                 while confirmar is None:
                     confirmar = input("¿Confirmar pedido? (S/N): ")
                     confirmar = validar_si_no(confirmar)
                 
                 if confirmar == "S":
-                    # Actualizar estadísticas
+                    # Actualizo estadisticas
                     actualizar_estadisticas(pedido, total_final)
                     print("\n¡PEDIDO CONFIRMADO!")
                     print(f"Número de pedido: {pedidos_realizados}")
