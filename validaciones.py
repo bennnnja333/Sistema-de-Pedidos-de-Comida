@@ -8,14 +8,14 @@ def validar_opcion_menu(opcion, max_opciones):
     Retorna: el número válido o None si es inválido
     """
     try:
-        opcion = int(opcion)  # Convertir a entero
+        opcion = int(opcion)  # Convierto a entero
         if opcion >= 1 and opcion <= max_opciones:
             return opcion
         else:
-            print(f"⚠️ Error: Ingrese un número entre 1 y {max_opciones}")
+            print(f"Error: Ingrese un número entre 1 y {max_opciones}")
             return None
     except ValueError:
-        print("⚠️ Error: Debe ingresar un número válido")
+        print("Error: Debe ingresar un número válido")
         return None
 
 def validar_cantidad(cantidad):
@@ -28,10 +28,10 @@ def validar_cantidad(cantidad):
         if cantidad > 0:
             return cantidad
         else:
-            print("⚠️ Error: La cantidad debe ser mayor a 0")
+            print("Error: La cantidad debe ser mayor a 0")
             return None
     except ValueError:
-        print("⚠️ Error: Debe ingresar un número válido")
+        print("Error: Debe ingresar un número válido")
         return None
 
 def validar_medio_pago(opcion):
@@ -44,10 +44,10 @@ def validar_medio_pago(opcion):
         if opcion >= 1 and opcion <= 4:
             return opcion
         else:
-            print("⚠️ Error: Seleccione una opción entre 1 y 4")
+            print("Error: Seleccione una opción entre 1 y 4")
             return None
     except ValueError:
-        print("⚠️ Error: Debe ingresar un número válido")
+        print("Error: Debe ingresar un número válido")
         return None
 
 def validar_si_no(respuesta):
@@ -59,5 +59,5 @@ def validar_si_no(respuesta):
     if respuesta == "S" or respuesta == "N":
         return respuesta
     else:
-        print("⚠️ Error: Responda con 'S' para sí o 'N' para no")
+        print("Error: Responda con 'S' para sí o 'N' para no")
         return None
