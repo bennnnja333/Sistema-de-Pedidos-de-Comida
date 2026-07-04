@@ -3,7 +3,7 @@
 # ============================================
 
 from funciones import *
-from datos import pedidos_realizados, total_ventas_dia
+import datos
 import sys
 
 def main():
@@ -67,7 +67,7 @@ def main():
                     # Actualizo estadisticas
                     actualizar_estadisticas(pedido, total_final)
                     print("\n¡PEDIDO CONFIRMADO!")
-                    print(f"Número de pedido: {pedidos_realizados}")
+                    print(f"Número de pedido: {datos.pedidos_realizados}")
                     print("¡Gracias por su compra!")
                 else:
                     print("\n❌ Pedido cancelado")
@@ -100,8 +100,8 @@ def main():
             print("\n" + "="*50)
             print("¡Gracias por usar nuestro sistema!")
             print("="*50)
-            print(f"Resumen del día: {pedidos_realizados} pedidos")
-            print(f"Total vendido: ${total_ventas_dia:,.0f}")
+            print(f"Resumen del día: {datos.pedidos_realizados} pedidos")
+            print(f"Total vendido: ${datos.total_ventas_dia:,.0f}")
             print("="*50)
             print("¡Vuelva pronto!")
             sys.exit()
