@@ -19,7 +19,7 @@ MENU = [
 
 # Promociones
 PROMOCIONES = {
-    "2x1 en bebidas": {"categoria": "Bebidas", "descuento": 50, "minimo": 2},
+    "50% de descuento en bebidas desde 2 unidades": {"categoria": "Bebidas", "descuento": 50, "minimo": 2},
     "Combo familiar": {"categoria": "Platos Principales", "descuento": 15, "minimo": 3},
 }
 
