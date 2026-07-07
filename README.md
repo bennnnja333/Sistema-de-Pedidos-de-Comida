@@ -1,4 +1,4 @@
-# 🍕 Sistema de Pedidos de Comida
+# Sistema de Pedidos de Comida
 
 ## Integrantes del grupo
 - Bentolila, David Benjamín - Legajo: 30202
