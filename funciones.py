@@ -54,7 +54,7 @@ def armar_pedido():
     total = 0    # Acumulador para el total
     
     print("\n" + "="*50)
-    print("🛒 ARMANDO PEDIDO")
+    print(" ARMANDO PEDIDO")
     print("="*50)
     
     # Muestro promociones al inicio
@@ -127,7 +127,7 @@ def armar_pedido():
     
     # Verifico si el pedido esta vacio
     if len(pedido) == 0:
-        print("\n❌ No se agregaron productos al pedido")
+        print("\n No se agregaron productos al pedido")
         return None, 0
     
     return pedido, total
@@ -195,7 +195,7 @@ def mostrar_resumen_pedido(pedido, total, total_con_descuento, descuento_total, 
     
     # Muestro promociones aplicadas si hay
     if len(promociones_aplicadas) > 0:
-        print("\n🎉 PROMOCIONES APLICADAS:")
+        print("\n PROMOCIONES APLICADAS:")
         for promo in promociones_aplicadas:
             print(f"  • {promo['nombre']}: -${promo['descuento']:,.0f}")
         print(f"\nTotal con descuento: ${total_con_descuento:,.0f}")
