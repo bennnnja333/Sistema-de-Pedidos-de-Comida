@@ -10,21 +10,35 @@
 ISI - Comisión 1.2 - 2026
 
 ## Descripción del sistema
-Sistema de gestión de pedidos para un local gastronómico. Permite:
-- Visualizar el menú completo con categorías
-- Armar pedidos seleccionando productos y cantidades
-- Aplicar promociones automáticas (2x1 en bebidas, combo familiar)
-- Calcular totales con descuentos
-- Seleccionar medio de pago
-- Ver estadísticas del día (total vendido, producto más pedido)
+Sistema de gestión de pedidos para un local gastronómico desarrollado en Python como trabajo final integrador de la asignatura Algoritmos y Estructuras de Datos. Permite:
+- Visualizar el menú completo: Muestra todos los productos organizados por categorías (Entradas, Platos Principales, Bebidas, Postres) con sus precios.
+- Armar pedidos: Permite seleccionar productos y cantidades, con validación de datos ingresados.
+- Aplicar promociones automáticas:
+   - 50% de descuento en bebidas al comprar 2 o más unidades.
+   - 15% de descuento en platos principales al comprar 3 o más (Combo familiar).
+- Calcular totales: Calcula subtotal, descuentos aplicados y total final.
+- Seleccionar medio de pago: Opciones disponibles: Efectivo, Tarjeta de débito, Tarjeta de crédito, Transferencia.
+- Ver estadísticas del día: Muestra cantidad de pedidos, total vendido y producto más solicitado.
+- Guardar y leer estadísticas: Permite guardar las estadísticas en un archivo de texto y recuperarlas posteriormente.
 
 ## Requisitos
 - Python 3.8 o superior
+- Git (opcional, para clonar el repositorio)
+- Sistema operativo: Windows, Linux o macOS (compatible con cualquier sistema que tenga Python instalado)
+- Editor de código (recomendado: Visual Studio Code)
 
 ## Instrucciones de ejecución
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/TU-USUARIO/sistema-pedidos-comida.git
+
+### Opción 1: Clonar desde GitHub (recomendado)
+En bash:
+   1. Clonar el repositorio:
+      git clone https://github.com/TU-USUARIO/sistema-pedidos-comida.git
+
+   2. Navegar a la carpeta del proyecto:
+      cd sistema-pedidos-comida
+
+   3. Ejecutar el programa
+      python main.py
 
 ## Uso de IA:
  - Se eligió CHATGPT como el agente a utilizar. Se utilizó principalmente como una herramienta de apoyo durante el desarrollo del trabajo. Su uso estuvo enfocado, principalmente, en dos aspectos: la modularización del programa y las validaciones de datos.
