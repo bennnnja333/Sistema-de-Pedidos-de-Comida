@@ -70,9 +70,9 @@ def main():
                     print(f"Número de pedido: {datos.pedidos_realizados}")
                     print("¡Gracias por su compra!")
                 else:
-                    print("\n❌ Pedido cancelado")
+                    print("\n Pedido cancelado")
             else:
-                print("\n❌ No se pudo realizar el pedido")
+                print("\n No se pudo realizar el pedido")
             
             input("\nPresione Enter para continuar...")
             
