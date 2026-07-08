@@ -9,6 +9,12 @@
 ## Comisión
 ISI - Comisión 1.2 - 2026
 
+## Enlace al repositorio de GitHub:
+https://github.com/bennnnja333/Sistema-de-Pedidos-de-Comida
+
+## Enlace al video demo:
+https://www.youtube.com/watch?v=svIcS5X_S80
+
 ## Descripción del sistema
 Sistema de gestión de pedidos para un local gastronómico desarrollado en Python como trabajo final integrador de la asignatura Algoritmos y Estructuras de Datos. Permite:
 - Visualizar el menú completo: Muestra todos los productos organizados por categorías (Entradas, Platos Principales, Bebidas, Postres) con sus precios.
